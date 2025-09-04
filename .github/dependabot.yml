@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # GitHub Actions updates monthly
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      day: "wednesday"
+      time: "01:00"
+    open-pull-requests-limit: 3
+
+    commit-message:
+      prefix: "chore"
+      include: "scope"
