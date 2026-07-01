@@ -32,7 +32,7 @@ jobs:
           }
       - name: Checkout Publii repo
         if: steps.check_pr.outputs.pr_open == 'false'
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: GetPublii/Publii
           fetch-depth: 1
